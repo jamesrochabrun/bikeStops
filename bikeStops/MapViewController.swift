@@ -30,7 +30,7 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         locationManager.delegate = self
         //4 start tracking user
         locationManager.startUpdatingLocation()
-        mapView.showsUserLocation = true
+        self.mapView.showsUserLocation = true
         
         let x = bikeStop.objectForKey("latitude") as! Int
         let y = bikeStop.objectForKey("longitude") as! Int
@@ -47,8 +47,7 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         
         self.mapView.addAnnotation(annotation)
         
-        self.zoomMap()
-        
+//        self.zoomMap()
         
     }
     
@@ -67,11 +66,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         let pinView = MKAnnotationView(annotation: annotation, reuseIdentifier: nil)
         pinView.image = UIImage(named:"bike")
         pinView.canShowCallout = true
-   
-        
         let calloutButton = UIButton(type: .DetailDisclosure) as UIButton
         pinView.rightCalloutAccessoryView = calloutButton
-        
         
         return pinView
     }
@@ -87,6 +83,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         mapView.setRegion(region, animated: true)
         
     }
+    
+    
     
     
     

@@ -302,6 +302,7 @@
 				7B39E4191CB81864001F6996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

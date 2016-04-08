@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -25,9 +26,11 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="4GY-wU-1q5" detailTextLabel="79k-B7-vhl" style="IBUITableViewCellStyleSubtitle" id="Y8z-4I-kH2">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y8z-4I-kH2" id="UG0-qi-FuF">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4GY-wU-1q5">
+                                                    <rect key="frame" x="15" y="1" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -37,6 +40,7 @@
                                                     </variation>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="79k-B7-vhl">
+                                                    <rect key="frame" x="15" y="22" width="59" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -70,10 +74,10 @@
                                 <exclude reference="Jbf-fQ-Uf2"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="cqh-kr-5wZ"/>
                                 <exclude reference="3e0-hg-jHs"/>
                                 <exclude reference="44E-AO-Uqh"/>
                                 <exclude reference="52V-ss-vNu"/>
-                                <exclude reference="cqh-kr-5wZ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -81,10 +85,10 @@
                                 <include reference="Jbf-fQ-Uf2"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="cqh-kr-5wZ"/>
                                 <include reference="3e0-hg-jHs"/>
                                 <include reference="44E-AO-Uqh"/>
                                 <include reference="52V-ss-vNu"/>
-                                <include reference="cqh-kr-5wZ"/>
                             </mask>
                         </variation>
                     </view>
@@ -106,6 +110,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dzt-zm-tCL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GiJ-Oj-zrX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rkw-kY-W1E">
@@ -127,10 +132,10 @@
                                 <exclude reference="Rkw-kY-W1E"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="uzD-Sb-SmW"/>
                                 <exclude reference="F6w-BR-6um"/>
                                 <exclude reference="UMm-WH-l4K"/>
                                 <exclude reference="dId-vQ-fc6"/>
-                                <exclude reference="uzD-Sb-SmW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -138,10 +143,10 @@
                                 <include reference="Rkw-kY-W1E"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="uzD-Sb-SmW"/>
                                 <include reference="F6w-BR-6um"/>
                                 <include reference="UMm-WH-l4K"/>
                                 <include reference="dId-vQ-fc6"/>
-                                <include reference="uzD-Sb-SmW"/>
                             </mask>
                         </variation>
                     </view>

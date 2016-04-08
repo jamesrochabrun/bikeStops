@@ -47,6 +47,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         
         self.mapView.addAnnotation(annotation)
         
+        self.zoomMap()
+        
         
     }
     
@@ -72,6 +74,18 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,MKMapViewDel
         
         
         return pinView
+    }
+    
+    func zoomMap()
+    {
+        let x = bikeStop.objectForKey("latitude") as! Int
+        let y = bikeStop.objectForKey("longitude") as! Int
+        let latitude = Double(x)
+        let longitude = Double(y)
+        let span = MKCoordinateSpanMake(0.5, 0.5)
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: latitude , longitude: longitude), span: span)
+        mapView.setRegion(region, animated: true)
+        
     }
     
     
